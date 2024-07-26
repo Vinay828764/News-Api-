@@ -4,10 +4,11 @@ body{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 .container{
   width: 100%;
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
 }
 .heading{
   text-transform: uppercase;
@@ -28,12 +29,22 @@ form{
 input{
   width: 300px;
   padding: 8px 12px;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
+  border: none;
+  border-bottom: 3px solid grey;
   border-radius: 0px 0px 5px 5px;
   -webkit-border-radius: 0px 0px 5px 5px;
   -moz-border-radius: 0px 0px 5px 5px;
   -ms-border-radius: 0px 0px 5px 5px;
   -o-border-radius: 0px 0px 5px 5px;
+}
+.card{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-right: 40px;
 }
 .card_item{
   width: 300px;
@@ -62,13 +73,15 @@ h4,p{
 span{
   position: absolute;
   left: 10px;
-  top: 190px;
+   bottom: 10px;
 
 }
 .author{
   position: absolute;
   right: 10px;
-  top: 170px;
+  bottom: 0px;
+  color: white;
+  text-transform: uppercase;
 }
 img{
   margin: 5px 0px 2px 0px;
@@ -78,5 +91,12 @@ main{
   justify-content: space-around;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
+}
+
+
+@media (max-width: 400px){
+    header{width: 102%;}
+}
+@media (max-width: 330px){
+    header{width: 119%;}
 }

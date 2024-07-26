@@ -58,9 +58,9 @@ function App() {
                 <li key={i.url} className="card_item">
                   <h4>{i.title}</h4>
                   <p>{i.content}</p>
-                  <span><a href={i.url} target="_blank" className="card-link">Read more</a></span>
-                  <p className="author">{i.author}</p>
                   {i.urlToImage && <img src={i.urlToImage} alt={i.title} />}
+                  <p className="author">{i.author}</p>
+                  <span><a href={i.url} target="_blank" className="card-link">Read more</a></span>
                 </li>
               ))}
             </ul>
